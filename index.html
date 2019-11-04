@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
   <div class="_cs_container-fluid _cs_color-bg--dark _cs_size-h-min-vh--100 ">
     <div class="_cs_container">
       <div class="row">
@@ -23,8 +24,8 @@
                   <p class="_cs_label _cs_label-center _cs_label-xl _cs_color-green">Atomic - Design</p>
                 </div>
               </div>
-              <div class="_cs_flex _cs_position-r">
-                <div class="_cs_position-a _cs_position-down-percent--0 _cs_position-right-percent--0
+              <div class="_cs_flex _cs_position-relative">
+                <div class="_cs_position-absolute _cs_position-down-percent--0 _cs_position-right-percent--0
                      _cs_flex _cs_flex-a--center _cs_flex-j--center _cs_p-md">
                   <a class="_cs_button _cs_button-positive _cs_button-sm _cs_m-0"
                     href="http://atomicdesign.bradfrost.com/chapter-2/" target="_blank">
@@ -216,169 +217,682 @@
               <p class="_cs_label _cs_label-center _cs_label-xl _cs_color-green">Atomic - classNames</p>
             </div>
           </div>
-
+          <!---------------------Label Sizes --------------------->
           <div class="_cs_p-md _cs_color-bg--litedark _cs_m-down--md">
             <p class="_cs_label _cs_label-sm _cs_color-green">Label Sizes</h1>
           </div>
           <div class="_cs_m-down--lg">
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_label ._cs_label-xxl</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_label ._cs_label-xl</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_label ._cs_label-lg</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_label ._cs_label-md</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_label ._cs_label-sm</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_label ._cs_label-xs</span>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_label _cs_label-</span>
+              <span class="_cs_label _cs_label-sm _cs_color-blue">($baseLabelSizes)</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_label _cs_label-xxl</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_label _cs_label-xl</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_label _cs_label-lg</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_label _cs_label-md</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_label _cs_label-sm</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_label _cs_label-xs</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
           </div>
+          <!---------------------Label Sizes /.--------------------->
+
+          <!---------------------Icon Sizes --------------------->
           <div class="_cs_p-md _cs_color-bg--litedark _cs_m-down--md">
             <p class="_cs_label _cs_label-sm _cs_color-green">Icon Sizes </h1>
           </div>
           <div class="_cs_m-down--lg">
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_icon ._cs_icon-xxl</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_icon ._cs_icon-xl</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_icon ._cs_icon-lg</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_icon ._cs_icon-md</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_icon ._cs_icon-sm</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_icon ._cs_icon-xs</span>
+            <div class="_cs_m-down--lg">
+              <div class="_cs_flex">
+                <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+                <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_icon _cs_icon-</span>
+                <span class="_cs_label _cs_label-sm _cs_color-blue">($baseIconSize)</span>
+                <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+              </div>
+              <div class="_cs_flex">
+                <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+                <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_icon _cs_icon-xxl</span>
+                <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+              </div>
+              <div class="_cs_flex">
+                <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+                <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_icon _cs_icon-xl</span>
+                <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+              </div>
+              <div class="_cs_flex">
+                <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+                <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_icon _cs_icon-lg</span>
+                <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+              </div>
+              <div class="_cs_flex">
+                <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+                <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_icon _cs_icon-md</span>
+                <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+              </div>
+              <div class="_cs_flex">
+                <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+                <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_icon _cs_icon-sm</span>
+                <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+              </div>
+              <div class="_cs_flex">
+                <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+                <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_icon _cs_icon-xs</span>
+                <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+              </div>
+            </div>
           </div>
+          <!---------------------Icon Sizes /.--------------------->
+
+          <!---------------------Buttons--------------------->
           <div class="_cs_p-md _cs_color-bg--litedark _cs_m-down--md">
             <p class="_cs_label _cs_label-sm _cs_color-green">buttons</h1>
           </div>
           <div class="_cs_m-down--lg">
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_button ._cs_button-poistive</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_button ._cs_button-negative </span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_button ._cs_button-default </span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_button ._cs_button-transparent </span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_button ._cs_button-border--negative </span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_button ._cs_button-border--positive </span>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_button _cs_button-</span>
+              <span class="_cs_label _cs_label-sm _cs_color-blue">($BaseButtonInputTypes)</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_button _cs_button-poistive</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_button _cs_button-negative</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_button _cs_button-default</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_button _cs_button-transparent</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_button _cs_button-border--negative</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_button _cs_button-border--positive</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
           </div>
+          <!---------------------Buttons /.--------------------->
+
+          <!---------------------Inputs--------------------->
           <div class="_cs_p-md _cs_color-bg--litedark _cs_m-down--md">
             <p class="_cs_label _cs_label-sm _cs_color-green">inputs</h1>
           </div>
           <div class="_cs_m-down--lg">
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_input ._cs_input-poistive</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_input ._cs_input-negative </span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_input ._cs_input-default </span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_input ._cs_input-transparent </span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_input ._cs_input-border--negative </span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_input ._cs_button-border--positive </span>
+             <div class="_cs_flex">
+               <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+               <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_input _cs_input-</span>
+               <span class="_cs_label _cs_label-sm _cs_color-blue">($BaseButtonInputTypes)</span>
+               <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+             </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_input _cs_input-poistive</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_input _cs_input-negative</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_input _cs_input-default</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_input _cs_input-transparent</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_input _cs_input-border--negative</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_input _cs_input-border--positive</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
           </div>
+          <!---------------------Inputs /.--------------------->
+
+          <!---------------------Borders --------------------->
           <div class="_cs_p-md _cs_color-bg--litedark _cs_m-down--md">
             <p class="_cs_label _cs_label-sm _cs_color-green">Borders</h1>
           </div>
           <div class="_cs_m-down--lg">
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_border-($baseColors)</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_border-green</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_border-(left-top-right-down)--($baseColors)</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_border-left--green</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_border-top--green</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_border-right--green</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_border-down--green</span>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_border-</span>
+              <span class="_cs_label _cs_label-sm _cs_color-blue">$baseColors</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_border-green</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_border-</span>
+              <span class="_cs_label _cs_label-sm _cs_color-blue">(posiiton)</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">-</span>
+              <span class="_cs_label _cs_label-sm _cs_color-blue">$baseColors</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_border-left--green</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_border-top--green</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_border-right--green</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_border-down--green</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+
           </div>
+          <!---------------------Borders /.--------------------->
+
+          <!---------------------Border Radius --------------------->
           <div class="_cs_p-md _cs_color-bg--litedark _cs_m-down--md">
             <p class="_cs_label _cs_label-sm _cs_color-green">Border Radius</h1>
           </div>
           <div class="_cs_m-down--lg">
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_border-radius--full</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_border-radius--lg</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_border-radius--md</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_border-radius--sm</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_border-radius-left-top--($baseBorderRadius)</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_border-radius-left-down--lg</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_border-radius-right-top--($baseBorderRadius)</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_border-radius-right-down--md</span>
-
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_border-radius--full</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_border-radius--lg</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_border-radius--md</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_border-radius--sm</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_border-radius-(left-right)-(top-down)--</span>
+              <span class="_cs_label _cs_label-sm _cs_color-blue">$baseBorderRadius</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_border-radius-left-down--md</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
           </div>
+          <!---------------------Border Radius /.--------------------->
 
+          <!---------------------Colors --------------------->
           <div class="_cs_p-md _cs_color-bg--litedark _cs_m-down--md">
             <p class="_cs_label _cs_label-sm _cs_color-green">Colors</h1>
           </div>
           <div class="_cs_m-down--xl">
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_color-($baseColors)</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_color-green</span>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_color-</span>
+              <span class="_cs_label _cs_label-sm _cs_color-blue">$baseColors</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_color-green</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
           </div>
+          <!---------------------Colors /.--------------------->
 
+          <!---------------------Background Colors --------------------->
           <div class="_cs_p-md _cs_color-bg--litedark _cs_m-down--md">
             <p class="_cs_label _cs_label-sm _cs_color-green">Background Colors</h1>
           </div>
           <div class="_cs_m-down--xl">
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_color-bg--($baseColors)</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_color-bg--green</span>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_color-bg--</span>
+              <span class="_cs_label _cs_label-sm _cs_color-blue">$baseColors</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_color-bg--green</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
           </div>
+          <!---------------------Background Colors /.--------------------->
 
+          <!---------------------Opacity --------------------->
           <div class="_cs_p-md _cs_color-bg--litedark _cs_m-down--md">
             <p class="_cs_label _cs_label-sm _cs_color-green">Opacity</h1>
           </div>
           <div class="_cs_m-down--xl">
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_opacity-(Opacity Number)</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_opacity-0</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_opacity-0--(Number)</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_opacity-0--9</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_opacity-1</span>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_opacity-</span>
+              <span class="_cs_label _cs_label-sm _cs_color-blue">$baseOpacityNumber</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_opacity-0</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_opacity-0--</span>
+              <span class="_cs_label _cs_label-sm _cs_color-blue">$baseOpacityNumber</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_opacity-0--7</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_opacity-1</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
           </div>
+          <!---------------------Opacity /.--------------------->
 
+          <!---------------------Color Opacity --------------------->
           <div class="_cs_p-md _cs_color-bg--litedark _cs_m-down--md">
             <p class="_cs_label _cs_label-sm _cs_color-green"> Color Opacity</h1>
           </div>
           <div class="_cs_m-down--xl">
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_opacity-($baseColors)-0--(Opacity Number)</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_opacity-dark--(Opacity Number)</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_opacity-dark-0--8</span>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_opacity-</span>
+              <span class="_cs_label _cs_label-sm _cs_color-blue">$baseColors</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">-0</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">--</span>
+              <span class="_cs_label _cs_label-sm _cs_color-blue">$baseOpacityNumber</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_opacity-dark-0--7</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
           </div>
+          <!---------------------Color Opacity /.--------------------->
 
+          <!---------------------Backround Color Opacity--------------------->
           <div class="_cs_p-md _cs_color-bg--litedark _cs_m-down--md">
             <p class="_cs_label _cs_label-sm _cs_color-green">Background Color Opacity</h1>
           </div>
           <div class="_cs_m-down--xl">
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_opacity-bg-($baseColors)-0--(Opacity Number)</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_opacity-bg-dark--(Opacity Number)</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_opacity-bg-dark-0--8</span>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_opacity-bg-</span>
+              <span class="_cs_label _cs_label-sm _cs_color-blue">$baseColors</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">-0</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">--</span>
+              <span class="_cs_label _cs_label-sm _cs_color-blue">$baseOpacityNumber</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_opacity-bg-dark-0--8</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
           </div>
+          <!---------------------Backround Color Opacity--------------------->
 
+          <!---------------------Positions--------------------->
           <div class="_cs_p-md _cs_color-bg--litedark _cs_m-down--md">
             <p class="_cs_label _cs_label-sm _cs_color-green">Positions</h1>
           </div>
           <div class="_cs_m-down--xl">
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_position-(Type)</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_position-fixed</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_position-left-percent--70</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_position-left-vh-percent--70</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_position-left-vw-percent--70</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_position-left-px-percent--70</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_position-(left-top-right-down-)(percent-vh-vw-px)--($baseSizes)</span>
-            <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_position-minus-left-vh--20</span>
-            <span
-              class="_cs_label _cs_label-sm _cs_color-yellow">._cs_position-minus-(left-top-right-down-)(percent-vh-vw-px)--($baseSizes)</span>
+            <div class="_cs_m-down--md">
+              <div class="_cs_flex">
+                <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+                <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_position-</span>
+                <span class="_cs_label _cs_label-sm _cs_color-blue">$basePositionTypes</span>
+                <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+              </div>
+              <div class="_cs_flex">
+                <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+                <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_position-fixed</span>
+                <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+              </div>
+              <div class="_cs_flex">
+                <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+                <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_position-relative</span>
+                <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+              </div>
+              <div class="_cs_flex">
+                <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+                <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_position-absolute</span>
+                <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+              </div>
+              <div class="_cs_flex">
+                <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+                <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_position-sticky</span>
+                <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+              </div>
+              <div class="_cs_flex">
+                <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+                <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_position-static</span>
+                <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+              </div>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_position-</span>
+              <span class="_cs_label _cs_label-sm _cs_color-blue">(Position)</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">-</span>
+              <span class="_cs_label _cs_label-sm _cs_color-blue">(Types)</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">--</span>
+              <span class="_cs_label _cs_label-sm _cs_color-blue">$baseSizes</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_position-left-percent--70</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_position-right-vh-percent--70</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_position-top-vw-percent--70</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_position-down-percent--70</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_position-minus-</span>
+              <span class="_cs_label _cs_label-sm _cs_color-blue">(Position)</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">-</span>
+              <span class="_cs_label _cs_label-sm _cs_color-blue">(Types)</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">--</span>
+              <span class="_cs_label _cs_label-sm _cs_color-blue">$baseSizes</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_position-minus-left-vh--20</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
           </div>
-        </div>
+          <!---------------------Positions /.--------------------->
 
-        <div class="_cs_p-md _cs_color-bg--litedark _cs_m-down--md">
-          <p class="_cs_label _cs_label-sm _cs_color-green">Spacings (margins - paddings)</h1>
-        </div>
-        <div class="_cs_m-down--xl">
-          <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_m-($baseSpacing)</span>
-          <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_m-xl</span>
-          <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_m-(left-top-right-down)--($baseSpacing)</span>
-          <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_m-left--sm</span>
-        </div>
+          <!---------------------Spacings--------------------->
+          <div class="_cs_p-md _cs_color-bg--litedark _cs_m-down--md">
+            <p class="_cs_label _cs_label-sm _cs_color-green">Spacings (margins - paddings)</h1>
+          </div>
+          <div class="_cs_m-down--xl">
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_m-</span>
+              <span class="_cs_label _cs_label-sm _cs_color-blue">$baseSpacing</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_m-xl</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_m-lg</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_m-md</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_m-sm</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_m-xs</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_m-auto</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex _cs_m-down--md">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_m-none</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_m-</span>
+              <span class="_cs_label _cs_label-sm _cs_color-blue">(Position)</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">-</span>
+              <span class="_cs_label _cs_label-sm _cs_color-blue">$baseSpacing</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_m-left--xl</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_m-top--lg</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_m-right--md</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_m-down--xs</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+          </div>
+          <!---paddings--->
+          <div class="_cs_m-down--xl">
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_p-</span>
+              <span class="_cs_label _cs_label-sm _cs_color-blue">$baseSpacing</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_p-xl</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_p-lg</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_p-md</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_p-sm</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_p-xs</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_p-auto</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex _cs_m-down--md">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_p-none</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_p-</span>
+              <span class="_cs_label _cs_label-sm _cs_color-blue">(Position)</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">-</span>
+              <span class="_cs_label _cs_label-sm _cs_color-blue">$baseSpacing</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_p-left--xl</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_p-top--lg</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_p-right--md</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_p-down--xs</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+          </div>
+          <!---------------------Spacings /.--------------------->
 
-        <div class="_cs_m-down--xl">
-          <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_p-($baseSpacing)</span>
-          <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_p-xl</span>
-          <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_p-(left-top-right-down)--($baseSpacing)</span>
-          <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_p-left--sm</span>
-        </div>
 
-        <div class="_cs_p-md _cs_color-bg--litedark _cs_m-down--md">
-          <p class="_cs_label _cs_label-sm _cs_color-green">z-index</h1>
-        </div>
-        <div class="_cs_p-down--xl">
-          <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_z-index-(z-index Number)</span>
-          <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_z-index-0</span>
-          <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_z-index-minus--(z-index Number)</span>
-          <span class="_cs_label _cs_label-sm _cs_color-yellow">._cs_z-index-minus--1</span>
+          <!---------------------Z index--------------------->
+          <div class="_cs_p-md _cs_color-bg--litedark _cs_m-down--md">
+            <p class="_cs_label _cs_label-sm _cs_color-green">z-index</h1>
+          </div>
+          <div class="_cs_p-down--xl">
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_z-index-</span>
+              <span class="_cs_label _cs_label-sm _cs_color-blue">$baseZindex(Number)</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_z-index-0</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_z-index-1</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_z-index-2</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_z-index-3</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_z-index-4</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_z-index-5</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_z-index-minus--</span>
+              <span class="_cs_label _cs_label-sm _cs_color-blue">$baseZindex(Number)</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+            <div class="_cs_flex">
+              <span class="_cs_label _cs_label-sm _cs_color-red">class="</span>
+              <span class="_cs_label _cs_label-sm _cs_color-yellow">_cs_z-index-minus--1</span>
+              <span class="_cs_label _cs_label-sm _cs_color-red">"></span>
+            </div>
+          </div>
+          <!---------------------Z index--------------------->
+
         </div>
       </div>
     </div>
-  </div>
 </body>
 
 </html>
